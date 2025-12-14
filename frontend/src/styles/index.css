@@ -1,0 +1,322 @@
+/* 全局样式 - 智能爬虫 Agent */
+
+/* CSS 变量 */
+:root {
+  --bg-primary: #0f0f23;
+  --bg-secondary: #1a1a2e;
+  --bg-tertiary: #16213e;
+  --bg-card: rgba(255, 255, 255, 0.03);
+  --border-color: rgba(255, 255, 255, 0.08);
+  --text-primary: #e0e0e0;
+  --text-secondary: #a0a0a0;
+  --text-muted: #606060;
+  --accent-primary: #409eff;
+  --accent-success: #67c23a;
+  --accent-warning: #e6a23c;
+  --accent-danger: #f56c6c;
+}
+
+/* 重置样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: var(--text-primary);
+  background: var(--bg-primary);
+  line-height: 1.6;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Element Plus 深色主题覆盖 */
+.dark {
+  /* 卡片 */
+  --el-card-bg-color: var(--bg-card);
+  --el-card-border-color: var(--border-color);
+  
+  /* 输入框 */
+  --el-input-bg-color: rgba(0, 0, 0, 0.3);
+  --el-input-border-color: rgba(255, 255, 255, 0.1);
+  --el-input-hover-border-color: rgba(100, 180, 255, 0.3);
+  --el-input-focus-border-color: var(--accent-primary);
+  --el-input-text-color: var(--text-primary);
+  --el-input-placeholder-color: var(--text-muted);
+  
+  /* 按钮 */
+  --el-button-bg-color: rgba(255, 255, 255, 0.05);
+  --el-button-border-color: rgba(255, 255, 255, 0.1);
+  --el-button-hover-bg-color: rgba(255, 255, 255, 0.1);
+  --el-button-text-color: var(--text-primary);
+  
+  /* 表格 */
+  --el-table-bg-color: transparent;
+  --el-table-tr-bg-color: transparent;
+  --el-table-header-bg-color: rgba(0, 0, 0, 0.2);
+  --el-table-border-color: var(--border-color);
+  --el-table-text-color: var(--text-primary);
+  
+  /* 弹窗 */
+  --el-dialog-bg-color: var(--bg-secondary);
+  --el-dialog-border-color: var(--border-color);
+  
+  /* 分割线 */
+  --el-border-color: var(--border-color);
+  --el-border-color-light: var(--border-color);
+  
+  /* 文字颜色 */
+  --el-text-color-primary: var(--text-primary);
+  --el-text-color-regular: var(--text-secondary);
+  --el-text-color-secondary: var(--text-muted);
+  --el-text-color-placeholder: var(--text-muted);
+  
+  /* 背景色 */
+  --el-bg-color: var(--bg-primary);
+  --el-bg-color-overlay: var(--bg-secondary);
+  --el-fill-color-blank: rgba(0, 0, 0, 0.3);
+  --el-fill-color-light: rgba(255, 255, 255, 0.03);
+  
+  /* 遮罩层 */
+  --el-mask-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Element Plus 组件样式微调 */
+.dark .el-card {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.dark .el-card__header {
+  border-bottom-color: var(--border-color);
+  padding: 16px 20px;
+}
+
+.dark .el-card__body {
+  padding: 20px;
+}
+
+.dark .el-button--primary {
+  background: linear-gradient(135deg, #409eff, #1890ff);
+  border: none;
+}
+
+.dark .el-button--primary:hover {
+  background: linear-gradient(135deg, #66b1ff, #409eff);
+}
+
+.dark .el-input__wrapper {
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: none !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.dark .el-input__wrapper:hover {
+  border-color: rgba(100, 180, 255, 0.3);
+}
+
+.dark .el-input__wrapper.is-focus {
+  border-color: var(--accent-primary);
+}
+
+.dark .el-textarea__inner {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: var(--text-primary);
+}
+
+.dark .el-textarea__inner:focus {
+  border-color: var(--accent-primary);
+}
+
+.dark .el-select__wrapper {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-shadow: none !important;
+}
+
+.dark .el-select-dropdown {
+  background: var(--bg-secondary);
+  border-color: var(--border-color);
+}
+
+.dark .el-select-dropdown__item {
+  color: var(--text-primary);
+}
+
+.dark .el-select-dropdown__item.hover,
+.dark .el-select-dropdown__item:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.dark .el-tag {
+  border: none;
+}
+
+.dark .el-tag--info {
+  background: rgba(144, 147, 153, 0.2);
+  color: #a0a0a0;
+}
+
+.dark .el-tag--primary {
+  background: rgba(64, 158, 255, 0.2);
+  color: #64b5f6;
+}
+
+.dark .el-tag--success {
+  background: rgba(103, 194, 58, 0.2);
+  color: #81c784;
+}
+
+.dark .el-tag--warning {
+  background: rgba(230, 162, 60, 0.2);
+  color: #ffb74d;
+}
+
+.dark .el-tag--danger {
+  background: rgba(245, 108, 108, 0.2);
+  color: #ef9a9a;
+}
+
+.dark .el-collapse {
+  border: none;
+}
+
+.dark .el-collapse-item__header {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+}
+
+.dark .el-collapse-item__wrap {
+  background: transparent;
+  border: none;
+}
+
+.dark .el-divider {
+  border-color: var(--border-color);
+}
+
+.dark .el-divider__text {
+  background: var(--bg-primary);
+}
+
+.dark .el-descriptions__cell {
+  background: transparent !important;
+}
+
+.dark .el-descriptions__label {
+  color: var(--text-muted);
+}
+
+.dark .el-descriptions__content {
+  color: var(--text-primary);
+}
+
+.dark .el-pagination {
+  --el-pagination-bg-color: transparent;
+  --el-pagination-button-bg-color: rgba(255, 255, 255, 0.05);
+  --el-pagination-hover-color: var(--accent-primary);
+}
+
+.dark .el-pagination button:disabled {
+  background: transparent;
+}
+
+.dark .el-message-box {
+  background: var(--bg-secondary);
+  border-color: var(--border-color);
+}
+
+.dark .el-message-box__title {
+  color: var(--text-primary);
+}
+
+.dark .el-message-box__content {
+  color: var(--text-secondary);
+}
+
+.dark .el-empty__description {
+  color: var(--text-muted);
+}
+
+.dark .el-input-number {
+  --el-input-number-bg-color: rgba(0, 0, 0, 0.3);
+}
+
+.dark .el-slider__runway {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* 动画 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-enter-active {
+  animation: fadeIn 0.3s ease;
+}
+
+.fade-leave-active {
+  animation: fadeIn 0.3s ease reverse;
+}
+
+/* 实用类 */
+.text-center {
+  text-align: center;
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.mt-4 {
+  margin-top: 16px;
+}
+
+.mb-4 {
+  margin-bottom: 16px;
+}
+
+/* 选择文本颜色 */
+::selection {
+  background: rgba(64, 158, 255, 0.3);
+  color: #fff;
+}
+
