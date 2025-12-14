@@ -93,8 +93,8 @@
 
 支持为 Main Agent 和 Extract Agent 分别配置不同的模型：
 
-- **Main Agent**：推荐使用推理能力强的模型（如 qwen3-max）
-- **Extract Agent**：可使用性价比更高的模型（如 qwen3-plus）
+- **Main Agent**：推荐使用推理能力强的模型
+- **Extract Agent**：可使用性价比更高的模型
 
 ## 📦 技术栈
 
