@@ -14,6 +14,8 @@
 - **自动路径规划**：从入口 URL 出发，智能探索相关链接
 - **内容智能提取**：自动过滤无关信息，只保留与任务相关的内容
 - **结构化输出**：将收集的信息整理成易读的格式
+<img width="2792" height="1496" alt="Snipaste_2025-12-14_17-49-09" src="https://github.com/user-attachments/assets/063d0831-b14e-4117-b7d4-fc088a533495" />
+
 
 ### 📊 任务管理
 
@@ -21,6 +23,8 @@
 - **定时执行**：支持间隔执行、Cron 表达式、一次性定时三种模式
 - **实时日志**：通过 SSE 实时推送执行过程
 - **Token 统计**：详细记录每次执行的 Token 消耗
+<img width="2792" height="1496" alt="image" src="https://github.com/user-attachments/assets/9583109b-e991-4b0f-bb34-9cae3267d6ec" />
+
 
 ### 🎨 现代化界面
 
@@ -28,6 +32,8 @@
 - **实时监控**：查看 Agent 的每一步思考和行动
 - **Markdown 渲染**：优雅展示爬取结果
 - **一键导出**：支持复制和导出结果
+<img width="2784" height="1484" alt="image" src="https://github.com/user-attachments/assets/962ed508-fabe-4408-9e7d-374bf921e2fa" />
+
 
 ## 🚀 项目亮点
 
